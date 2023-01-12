@@ -7,17 +7,21 @@ import Btn from "./Btn";
 
 function App() {
 
-  /* etat a 0 */
+  /* fonction pour etat de base a 0 */
   const [count, setCount] = useState(0);
 
-  /* incrementer de 1 a chaque clic */
+  /* fonction pour incrementer de 1 a chaque clic */
   const actionClick=() => {
     setCount(count + 1)
   }
 
   return (
     <div className="App">
+
+      {/* affichage de la valeur dynamique*/}
       <Value valeur={count}/>
+
+      {/* affichage du bouton*/}
       <Btn clic={actionClick}/>
 
     </div>
@@ -25,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+
