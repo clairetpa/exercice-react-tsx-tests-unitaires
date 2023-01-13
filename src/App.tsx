@@ -22,7 +22,7 @@ function App() {
       <Value valeur={count}/>
 
       {/* affichage du bouton*/}
-      <Btn clic={actionClick}/>
+      <Btn click={actionClick}/>
 
     </div>
   );
