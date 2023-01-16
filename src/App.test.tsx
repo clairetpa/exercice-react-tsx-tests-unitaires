@@ -31,7 +31,7 @@ describe('App component testing', () => {
     expect(screen.getByText(/le chiffre est 0/i)).toBeInTheDocument();
 
     /* assert: verifier que le bouton INCREMENTER s'affiche*/
-    expect(screen.getByRole('button')).toBeInTheDocument();
+    /* expect(screen.getByRole('button')).toBeInTheDocument(); */
     expect(screen.getByRole('button', {name:/INCREMENTER/i})).toBeTruthy();
   });
   
